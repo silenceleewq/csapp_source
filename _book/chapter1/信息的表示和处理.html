@@ -198,7 +198,7 @@
 <blockquote>
 <p>32&#x4F4D;&#x5B57;&#x957F;&#x9650;&#x5236;&#x865A;&#x5730;&#x5740;&#x7A7A;&#x95F4;&#x4E3A;4&#x5343;&#x5146;&#x5B57;&#x8282;(4GB),&#x6269;&#x5C55;&#x5230;64&#x4F4D;&#x5B57;&#x957F;, &#x865A;&#x62DF;&#x7A7A;&#x95F4;&#x5730;&#x5740;&#x4E3A; 16EB (1EB = 1024PB, 1PB = 1024TB)&#x8FD9;&#x91CC;&#x6D89;&#x53CA;&#x5230;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x5185;&#x5B58;&#x7BA1;&#x7406;...</p>
 </blockquote>
-<p><img src="../Users/lirenqiang1/csapp_source/source/2-3 data size.png" alt="image"></p>
+<p><img src="../source/2-3 data size.png" alt="image"></p>
 <p>&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x56E0;&#x4E3A;&#x673A;&#x5668;&#x7684;&#x4E0D;&#x540C;&#x800C;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x5927;&#x5C0F;&#x4E0D;&#x4E00;, C99&#x5F15;&#x5165;&#x4E86; int32_t &amp; int64_t &#x6765;&#x7CBE;&#x786E;&#x63A7;&#x5236;&#x6570;&#x636E;&#x7684;&#x5927;&#x5C0F;.</p>
 <p>&#x4E00;&#x822C;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7F16;&#x7801;&#x90FD;&#x662F;&#x6709;&#x7B26;&#x53F7;&#x6570;&#x503C;, &#x9664;&#x975E;&#x524D;&#x9762;&#x6709; unsigned &#x5173;&#x952E;&#x5B57;&#x6765;&#x7279;&#x522B;&#x58F0;&#x660E;&#x65E0;&#x7B26;&#x53F7;.</p>
 <p>char&#x7C7B;&#x578B;,&#x5927;&#x591A;&#x6570;&#x7F16;&#x8BD1;&#x5668;&#x548C;&#x673A;&#x5668;&#x89C6;&#x4E3A;&#x6709;&#x7B26;&#x53F7;&#x6570;, &#x4F46;C&#x6807;&#x51C6;&#x4E0D;&#x4FDD;&#x8BC1;&#x8FD9;&#x4E00;&#x70B9;.</p>
@@ -218,11 +218,11 @@
 <p><code>show_bytes(&quot;12345&quot;, 6);</code> &#x6765;&#x8FD0;&#x884C;&#x7684;&#x8BDD;,&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x4E3A;: 31 32 33 34 35 00, &#x8FD9;&#x91CC;&#x7684;12345&#x6B63;&#x597D;&#x5BF9;&#x5E94;ASCII&#x7684;31 32 33 34 35.</p>
 <p>&#x5728;&#x4F7F;&#x7528; ASCII &#x7684;&#x7CFB;&#x7EDF;&#x4E0A;, &#x4E0A;&#x9762;&#x7684;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;&#x5230;&#x7684;&#x7ED3;&#x679C;,&#x90FD;&#x662F;&#x76F8;&#x540C;&#x7684;, &#x4E0E;&#x5B57;&#x8282;&#x7684;&#x987A;&#x5E8F;&#x548C;&#x5927;&#x5C0F;&#x89C4;&#x5219;&#x65E0;&#x5173;, &#x6240;&#x4EE5;, &#x6587;&#x672C;&#x6570;&#x636E;&#x6BD4;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x5177;&#x6709;&#x66F4;&#x5F3A;&#x7684;&#x5E73;&#x53F0;&#x72EC;&#x7ACB;&#x6027;.</p>
 <h2 id="215-&#x8868;&#x793A;&#x4EE3;&#x7801;">2.1.5 &#x8868;&#x793A;&#x4EE3;&#x7801;</h2>
-<p><img src="../Users/lirenqiang1/csapp_source/source/2-1-5Code.png" alt="image">
+<p><img src="../source/2-1-5Code.png" alt="image">
 &#x4E0D;&#x540C;&#x7684;&#x673A;&#x5668;&#x7C7B;&#x578B;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x4E14;&#x4E0D;&#x517C;&#x5BB9;&#x7684;&#x6307;&#x4EE4;&#x548C;&#x7F16;&#x7801;&#x65B9;&#x5F0F;. &#x5373;&#x4F7F;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#x7684;&#x8FDB;&#x7A0B;, &#x8FD0;&#x884C;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E0A;&#x4E5F;&#x4F1A;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x7F16;&#x7801;&#x89C4;&#x5219;, &#x56E0;&#x6B64;&#x4E8C;&#x8FDB;&#x5236;&#x4EE3;&#x7801;&#x662F;&#x4E0D;&#x517C;&#x5BB9;&#x7684;.</p>
 <p>&#x4ECE;&#x673A;&#x5668;&#x89D2;&#x5EA6;&#x6765;&#x770B;, &#x7A0B;&#x5E8F;&#x4EC5;&#x4EC5;&#x53EA;&#x662F;&#x5B57;&#x8282;&#x5E8F;&#x5217;.</p>
 <h2 id="216-&#x5E03;&#x5C14;&#x4EE3;&#x6570;&#x7B80;&#x4ECB;">2.1.6 &#x5E03;&#x5C14;&#x4EE3;&#x6570;&#x7B80;&#x4ECB;</h2>
-<p><img src="../Users/lirenqiang1/csapp_source/source/2-7&#x5E03;&#x5C14;&#x4EE3;&#x6570;&#x8FD0;&#x7B97;.png" alt="image"></p>
+<p><img src="../source/2-7&#x5E03;&#x5C14;&#x4EE3;&#x6570;&#x8FD0;&#x7B97;.png" alt="image"></p>
 <p>~ : &#x903B;&#x8F91;&#x8FD0;&#x7B97; NOT.<br>&amp; : &#x903B;&#x8F91;&#x8FD0;&#x7B97; AND.<br>| : &#x903B;&#x8F91;&#x8FD0;&#x7B97; OR.<br>^ : &#x903B;&#x8F91;&#x8FD0;&#x7B97; &#x2295;, &#x5F53; P &#x6216;&#x8005; Q &#x4E3A;&#x771F;&#x4F46;&#x4E0D;&#x540C;&#x65F6;&#x4E3A;&#x771F;&#x65F6;, P &#x2295; Q &#x6210;&#x7ACB;. P = 1  &#x4E14; Q = 0 &#x6216;&#x8005; P = 0 &#x4E14; Q = 1, P^Q = 1.</p>
 <p>&#x53EF;&#x4EE5;&#x7528;&#x4F4D;&#x5411;&#x91CF; [<em>a</em><sub>w-1</sub>, <em>a</em><sub>w-2</sub>,...<em>a</em><sub>1</sub>, <em>a</em><sub>0</sub>]&#x7F16;&#x7801;&#x4EFB;&#x4F55;&#x5B50;&#x96C6; A&#x2286;{0, 1, ..., w-1}.
 &#x6BD4;&#x5982;: a &#x2250; [0110 1001] &#x8868;&#x793A;&#x96C6;&#x5408; A = {0, 3, 5, 6}, &#x800C; B&#x2250;[0101 0101], &#x8868;&#x793A;&#x96C6;&#x5408;B={0, 2, 4, 6}.</p>
@@ -257,28 +257,28 @@
 <p>Java &#x53EA;&#x652F;&#x6301;&#x6709;&#x7B26;&#x53F7;&#x6570;.</p>
 <h2 id="222-&#x65E0;&#x7B26;&#x53F7;&#x6570;&#x7684;&#x7F16;&#x7801;">2.2.2 &#x65E0;&#x7B26;&#x53F7;&#x6570;&#x7684;&#x7F16;&#x7801;</h2>
 <p>&#x539F;&#x7406;: &#x65E0;&#x7B26;&#x53F7;&#x6570;&#x7F16;&#x7801;&#x7684;&#x5B9A;&#x4E49;: &#x516C;&#x5F0F;(2.1)
-<img src="../Users/lirenqiang1/csapp_source/source/b2u_2_1.png" alt="image"></p>
+<img src="../source/b2u_2_1.png" alt="image"></p>
 <p>&#x2250; : &#x8868;&#x793A;&#x5DE6;&#x8FB9;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x7B49;&#x4E8E;&#x53F3;&#x8FB9;.</p>
 <p>&#x539F;&#x7406;: &#x65E0;&#x7B26;&#x53F7;&#x6570;&#x7F16;&#x7801;&#x7684;&#x552F;&#x4E00;&#x6027;.</p>
 <p>&#x6BCF;&#x4E00;&#x4E2A; w &#x4F4D;&#x7684;&#x65E0;&#x7B26;&#x53F7;&#x4E8C;&#x8FDB;&#x5236;&#x7F16;&#x7801;, &#x90FD;&#x552F;&#x4E00;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A; 0~2<sup>w</sup> &#x7684;&#x6574;&#x6570;.</p>
 <p>&#x516C;&#x5F0F;(2.2)
-<img src="../Users/lirenqiang1/csapp_source/source/formula_2_2.png" alt="image">    </p>
+<img src="../source/formula_2_2.png" alt="image">    </p>
 <h2 id="223-&#x8865;&#x7801;&#x7F16;&#x7801;">2.2.3 &#x8865;&#x7801;&#x7F16;&#x7801;</h2>
 <p>&#x6700;&#x5E38;&#x89C1;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x8868;&#x793A;&#x6709;&#x7B26;&#x53F7;&#x6570;&#x7684;&#x7F16;&#x7801;&#x5C31;&#x662F;&#x8865;&#x7801;.
 &#x8865;&#x7801;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x6700;&#x9AD8;&#x4F4D;&#x4E3A;&#x7B26;&#x53F7;&#x4F4D;&#x6765;&#x5B9E;&#x73B0;.</p>
 <p>&#x539F;&#x7406;: &#x8865;&#x7801;&#x7F16;&#x7801;&#x7684;&#x5B9A;&#x4E49; &#x516C;&#x5F0F;(2.3)
-<img src="../Users/lirenqiang1/csapp_source/source/two&apos;scomplement_2_2_3.png" alt="image"></p>
+<img src="../source/two&apos;scomplement_2_2_3.png" alt="image"></p>
 <p>&#x539F;&#x7406;: &#x8865;&#x7801;&#x7F16;&#x7801;&#x7684;&#x552F;&#x4E00;&#x6027;</p>
 <p>&#x51FD;&#x6570; B2T<sub>w</sub> &#x662F;&#x4E00;&#x4E2A;&#x53CC;&#x5C04;.</p>
 <p>&#x516C;&#x5F0F;(2.4)
-<img src="../Users/lirenqiang1/csapp_source/source/formula_2_4.png" alt="image"></p>
+<img src="../source/formula_2_4.png" alt="image"></p>
 <blockquote>
 <p>&#x8865;&#x7801;, &#x539F;&#x7801;, &#x53CD;&#x7801; &#x53C2;&#x8003;&#x8D44;&#x6599;: <a href="https://www.cnblogs.com/zhangziqiu/archive/2011/03/30/ComputerCode.html" target="_blank">ComputerCode</a></p>
 </blockquote>
 <h2 id="224-&#x6709;&#x7B26;&#x53F7;&#x6570;&#x548C;&#x65E0;&#x7B26;&#x53F7;&#x6570;&#x4E4B;&#x95F4;&#x7684;&#x8F6C;&#x6362;-conversions-between-signed-and-unsigned">2.2.4 &#x6709;&#x7B26;&#x53F7;&#x6570;&#x548C;&#x65E0;&#x7B26;&#x53F7;&#x6570;&#x4E4B;&#x95F4;&#x7684;&#x8F6C;&#x6362; Conversions between Signed and Unsigned.</h2>
 <p>&#x5728; &#x6709;&#x7B26;&#x53F7;&#x6570; &#x548C; &#x65E0;&#x7B26;&#x53F7;&#x6570; &#x4E4B;&#x95F4;&#x8F6C;&#x6362;&#x7684;&#x65F6;&#x5019;, &#x6570;&#x503C;&#x53EF;&#x80FD;&#x4F1A;&#x53D8;, &#x4F46;&#x662F;&#x4F4D;&#x6A21;&#x5F0F;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;, &#x6539;&#x53D8;&#x7684;&#x662F;&#x5BF9;&#x8FD9;&#x4E9B;&#x4F4D;&#x7684;&#x89E3;&#x91CA;&#x65B9;&#x5F0F;.</p>
 <p>&#x539F;&#x7406;: &#x8865;&#x7801;&#x8F6C;&#x6362;&#x4E3A;&#x65E0;&#x7B26;&#x53F7;&#x6570; &#x516C;&#x5F0F;(2.5)</p>
-<p><img src="../Users/lirenqiang1/csapp_source/source/formula_2_5@2x.png" alt="image"></p>
+<p><img src="../source/formula_2_5@2x.png" alt="image"></p>
 <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
 
                                 
@@ -319,7 +319,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第2章: 信息的表示和处理","level":"1.2.1","depth":2,"previous":{"title":"第一部分: 程序结构和执行","level":"1.2","depth":1,"path":"chapter1/README.md","ref":"chapter1/README.md","articles":[{"title":"第2章: 信息的表示和处理","level":"1.2.1","depth":2,"path":"chapter1/信息的表示和处理.md","ref":"chapter1/信息的表示和处理.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/信息的表示和处理.md","mtime":"2019-07-03T14:32:43.711Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-03T14:32:58.235Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第2章: 信息的表示和处理","level":"1.2.1","depth":2,"previous":{"title":"第一部分: 程序结构和执行","level":"1.2","depth":1,"path":"chapter1/README.md","ref":"chapter1/README.md","articles":[{"title":"第2章: 信息的表示和处理","level":"1.2.1","depth":2,"path":"chapter1/信息的表示和处理.md","ref":"chapter1/信息的表示和处理.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/信息的表示和处理.md","mtime":"2019-07-03T14:37:10.632Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-03T14:37:21.952Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
