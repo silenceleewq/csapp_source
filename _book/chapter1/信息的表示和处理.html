@@ -317,6 +317,22 @@ show_bytes((byte_pointer) &amp;uy, sizeof(unsigned));
 <blockquote>
 <p>&#x81EA;&#x5DF1;&#x5BF9;&#x4E0A;&#x9762;&#x7684;&#x7406;&#x89E3;: &#x9996;&#x5148; sx = -12345; &#x5C06; short sx &#x8F6C;&#x6210; int sx &#x540E;, sx &#x7684;&#x503C;&#x8FD8;&#x662F; -12345, &#x8FD9;&#x5C31;&#x662F;&#x5148;&#x6539;&#x53D8;&#x5927;&#x5C0F;. &#x4E4B;&#x540E;&#x518D;&#x4ECE;&#x6709;&#x7B26;&#x53F7;&#x8F6C;&#x5230;&#x65E0;&#x7B26;&#x53F7;, 32&#x4F4D;&#x673A;&#x5668;&#x5C31;&#x662F; -12345+2<sup>32</sup> = 4294967296 - 12345 = 4294954951;</p>
 </blockquote>
+<h2 id="227-&#x622A;&#x65AD;&#x6570;&#x5B57;">2.2.7 &#x622A;&#x65AD;&#x6570;&#x5B57;</h2>
+<p>&#x539F;&#x7406;: &#x622A;&#x65AD;&#x65E0;&#x7B26;&#x53F7;&#x6570;
+<img src="../source/principle_2_2_7_1.png" alt="image"></p>
+<p>&#x5BF9;&#x4E8E;&#x4EFB;&#x4F55; i &#x2265; k, 2<sup>i</sup> mod 2<sup>k</sup> =0</p>
+<p>&#x5F53;&#x5C06;&#x4E00;&#x4E2A; <em>w</em> &#x4F4D;&#x7684;&#x6570; <em>x</em> &#x622A;&#x65AD;&#x4E3A;&#x4E00;&#x4E2A; k &#x4F4D;&#x6570;&#x5B57;&#x65F6;.&#x6211;&#x4EEC;&#x4F1A;&#x4E22;&#x5F03;&#x9AD8; w-k &#x4F4D;..</p>
+<p>&#x539F;&#x7406;: &#x622A;&#x65AD;&#x8865;&#x7801;&#x503C;
+<img src="../source/principle_2_2_7_2.png" alt="image"></p>
+<blockquote>
+<p>&#x4E2A;&#x4EBA;&#x7406;&#x89E3;, &#x9996;&#x5148; x=B2U<sub>w</sub>(x), &#x662F;&#x4E3A;&#x4E86;&#x540E;&#x9762; x mod 2<sup>k</sup> &#x505A;&#x6253;&#x7B97;, x mod 2<sup>k</sup>&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x5C06;w-1&#x5230; k &#x4E4B;&#x95F4;&#x7684;&#x4F4D;&#x6570;&#x6D88;&#x6389;, &#x5269;&#x4E0B;&#x7684;&#x53EA;&#x6709; k-1 &#x4F4D;&#x4E86;.</p>
+<p>&#x6BD4;&#x5982; x = 111001 =  57, &#x5C06; x &#x622A;&#x65AD;&#x4E3A; 4 &#x4F4D;&#x7684;&#x6570;. &#x9996;&#x5148; x mod 2<sup>4</sup> = 3 &#x2026;&#x2026; 9&#xFF0C; &#x56E0;&#x4E3A;&#x4F59;&#x6570;&#x80AF;&#x5B9A;&#x662F;&#x5728; 0~2<sup>4</sup> &#x4E4B;&#x95F4;&#x7684;&#x6570;&#x5B57;. &#x6240;&#x4EE5; x mod 2<sup>4k</sup> &#x5C31;&#x4FDD;&#x7559;&#x4E86;&#x6700;&#x540E;4&#x4F4D;&#x4F4D;&#x503C;.</p>
+<p>&#x6700;&#x540E;, &#x518D;&#x8FDB;&#x884C; B2T<sub><em>k</em></sub>() &#x8FD0;&#x7B97;, &#x5C06;&#x6700;&#x9AD8;&#x6709;&#x6548;&#x4F4D; x<sub>k-1</sub> &#x7684;&#x6743;&#x91CD;&#x8F6C;&#x4ECE; 2<sup>k-1</sup> &#x53D8;&#x4E3A; -2<sup>k-1</sup>, &#x8FD9;&#x6837;&#x5C31;&#x6210;&#x4E86;&#x8865;&#x7801;&#x503C;&#x4E86;.</p>
+</blockquote>
+<p>&#x516C;&#x5F0F;(2.9)
+<img src="../source/formula_2_9.png" alt="image"></p>
+<p>&#x516C;&#x5F0F;(2.10)
+<img src="../source/formula_2_10.png" alt="image"></p>
 <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
 
                                 
@@ -357,7 +373,7 @@ show_bytes((byte_pointer) &amp;uy, sizeof(unsigned));
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第2章: 信息的表示和处理","level":"1.2.1","depth":2,"previous":{"title":"第一部分: 程序结构和执行","level":"1.2","depth":1,"path":"chapter1/README.md","ref":"chapter1/README.md","articles":[{"title":"第2章: 信息的表示和处理","level":"1.2.1","depth":2,"path":"chapter1/信息的表示和处理.md","ref":"chapter1/信息的表示和处理.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/信息的表示和处理.md","mtime":"2019-07-05T14:38:38.097Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-05T14:38:49.575Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第2章: 信息的表示和处理","level":"1.2.1","depth":2,"previous":{"title":"第一部分: 程序结构和执行","level":"1.2","depth":1,"path":"chapter1/README.md","ref":"chapter1/README.md","articles":[{"title":"第2章: 信息的表示和处理","level":"1.2.1","depth":2,"path":"chapter1/信息的表示和处理.md","ref":"chapter1/信息的表示和处理.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/信息的表示和处理.md","mtime":"2019-07-05T23:49:33.225Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-05T23:51:50.389Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
