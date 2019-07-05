@@ -240,7 +240,7 @@
 <h2 id="218-c-&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x903B;&#x8F91;&#x8FD0;&#x7B97;">2.1.8 C &#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x903B;&#x8F91;&#x8FD0;&#x7B97;.</h2>
 <p>&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;: <code>||</code>, <code>&amp;&amp;</code>, <code>!</code>. &#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x8BA4;&#x4E3A;&#x6240;&#x6709;&#x975E;&#x96F6;&#x7684;&#x53C2;&#x6570;&#x90FD;&#x8868;&#x793A; TRUE, &#x800C;&#x53C2;&#x6570; 0 &#x8868;&#x793A; FALSE.</p>
 <p>&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26; <code>||</code>, <code>&amp;&amp;</code>,&#x5982;&#x679C;&#x5BF9;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x6C42;&#x503C;&#x5C31;&#x80FD;&#x786E;&#x5B9A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;. &#x5C31;&#x4E0D;&#x4F1A;&#x5BF9;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x6C42;&#x503C;.&#x56E0;&#x6B64;&#x4F8B;&#x5982;: a &amp;&amp; 5 / a &#x5C06;&#x4E0D;&#x4F1A;&#x9020;&#x6210;&#x88AB; &#x96F6; &#x9664;</p>
-<p>p &amp;&amp; <em>p++ &#x4E5F;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x95F4;&#x63A5;&#x5F15;&#x7528;&#x7A7A;&#x6307;&#x9488;. &#x56E0;&#x4E3A;&#x5982;&#x679C; p &#x662F;&#x7A7A;&#x6307;&#x9488;&#x7684;&#x8BDD;, p &#x5373;&#x51B3;&#x5B9A;&#x4E86;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x4E3A; FALSE, &#x6240;&#x4EE5;&#x5C31;&#x4E0D;&#x4F1A;&#x53BB;&#x6267;&#x884C; </em>p, &#x5C31;&#x907F;&#x514D;&#x4E86;&#x5BF9;&#x7A7A;&#x6307;&#x9488;&#x7684;&#x8BBF;&#x95EE;&#x4E86;.</p>
+<p>p &amp;&amp; *p++ &#x4E5F;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x95F4;&#x63A5;&#x5F15;&#x7528;&#x7A7A;&#x6307;&#x9488;. &#x56E0;&#x4E3A;&#x5982;&#x679C; p &#x662F;&#x7A7A;&#x6307;&#x9488;&#x7684;&#x8BDD;, p &#x5373;&#x51B3;&#x5B9A;&#x4E86;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x4E3A; FALSE, &#x6240;&#x4EE5;&#x5C31;&#x4E0D;&#x4F1A;&#x53BB;&#x6267;&#x884C; *p, &#x5C31;&#x907F;&#x514D;&#x4E86;&#x5BF9;&#x7A7A;&#x6307;&#x9488;&#x7684;&#x8BBF;&#x95EE;&#x4E86;.</p>
 <p>&#x4F7F;&#x7528;&#x4F4D;&#x7EA7;&#x548C;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x6765;&#x5B9E;&#x73B0; x == y. : !(x^y), &#x5F53;&#x4E14;&#x4EC5;&#x5F53; x &#x7684;&#x6BCF;&#x4E00;&#x4F4D;&#x548C; y &#x7684;&#x6BCF;&#x4E00;&#x4F4D;&#x5339;&#x914D;&#x65F6;, x ^ y &#x7B49;&#x4E8E;&#x96F6;.</p>
 <h2 id="219-c-&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x79FB;&#x4F4D;&#x8FD0;&#x7B97;">2.1.9 C &#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x79FB;&#x4F4D;&#x8FD0;&#x7B97;.</h2>
 <p>&#x79FB;&#x4F4D;&#x8FD0;&#x7B97;, &#x5411;&#x5DE6;&#x6216;&#x8005;&#x5411;&#x53F3;.</p>
@@ -260,7 +260,7 @@
 <img src="../source/b2u_2_1.png" alt="image"></p>
 <p>&#x2250; : &#x8868;&#x793A;&#x5DE6;&#x8FB9;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x7B49;&#x4E8E;&#x53F3;&#x8FB9;.</p>
 <p>&#x539F;&#x7406;: &#x65E0;&#x7B26;&#x53F7;&#x6570;&#x7F16;&#x7801;&#x7684;&#x552F;&#x4E00;&#x6027;.</p>
-<p>&#x6BCF;&#x4E00;&#x4E2A; w &#x4F4D;&#x7684;&#x65E0;&#x7B26;&#x53F7;&#x4E8C;&#x8FDB;&#x5236;&#x7F16;&#x7801;, &#x90FD;&#x552F;&#x4E00;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A; 0~2<sup>w</sup> &#x7684;&#x6574;&#x6570;.</p>
+<p>&#x6BCF;&#x4E00;&#x4E2A; w &#x4F4D;&#x7684;&#x65E0;&#x7B26;&#x53F7;&#x4E8C;&#x8FDB;&#x5236;&#x7F16;&#x7801;, &#x90FD;&#x552F;&#x4E00;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A; 0~2<sup>w</sup>-1 &#x7684;&#x6574;&#x6570;.</p>
 <p>&#x516C;&#x5F0F;(2.2)
 <img src="../source/formula_2_2.png" alt="image">    </p>
 <h2 id="223-&#x8865;&#x7801;&#x7F16;&#x7801;">2.2.3 &#x8865;&#x7801;&#x7F16;&#x7801;</h2>
@@ -282,6 +282,41 @@
 <p>B2U(x) - B2T(x) = x<sub>w-1</sub>2<sup>w</sup></p>
 <p>&#x516C;&#x5F0F;(2.6)
 <img src="../source/formula_2_6.png" alt="image"></p>
+<p>&#x539F;&#x7406;: &#x65E0;&#x7B26;&#x53F7;&#x6570;&#x8F6C;&#x6362;&#x4E3A;&#x8865;&#x7801;: &#x516C;&#x5F0F;(2.7)
+<img src="../source/formula_2_7.png" alt="image"></p>
+<p>&#x63A8;&#x5BFC;: &#x65E0;&#x7B26;&#x53F7;&#x6570;&#x8F6C;&#x6362;&#x4E3A;&#x8865;&#x7801; &#x516C;&#x5F0F;(2.8)
+<img src="../source/formula_2_8.png" alt="image"></p>
+<h2 id="225-c&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x6709;&#x7B26;&#x53F7;&#x6570;&#x548C;&#x65E0;&#x7B26;&#x53F7;&#x6570;">2.2.5 C&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x6709;&#x7B26;&#x53F7;&#x6570;&#x548C;&#x65E0;&#x7B26;&#x53F7;&#x6570;</h2>
+<p>&#x5F53;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x65F6;, &#x5982;&#x679C;&#x5B83;&#x7684;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F;&#x6709;&#x7B26;&#x53F7;&#x7684;&#x800C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x65E0;&#x7B26;&#x53F7;&#x7684;, &#x90A3;&#x4E48;C&#x8BED;&#x8A00;&#x4F1A;&#x9690;&#x5F0F;&#x5730;&#x5C06;&#x6709;&#x7B26;&#x53F7;&#x53C2;&#x6570;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E3A;&#x65E0;&#x7B26;&#x53F7;&#x6570;, &#x5E76;&#x5047;&#x8BBE;&#x8FD9;&#x4E24;&#x4E2A;&#x6570;&#x90FD;&#x662F;&#x975E;&#x8D1F;&#x7684;, &#x6765;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x8FD0;&#x7B97;.</p>
+<blockquote>
+<p>&#x8FD9;&#x79CD;&#x64CD;&#x4F5C;&#x5BF9;&#x4E8E;&#x6807;&#x51C6;&#x7684;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x6765;&#x8BF4;&#x5E76;&#x6CA1;&#x6709;&#x591A;&#x5927;&#x5DEE;&#x5F02;, &#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x50CF; &lt; &#x548C; &gt; &#x8FD9;&#x6837;&#x7684;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#x6765;&#x8BF4;, &#x5B83;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x975E;&#x76F4;&#x89C2;&#x7684;&#x7ED3;&#x679C;.</p>
+</blockquote>
+<h2 id="226-&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x7684;&#x4F4D;&#x8868;&#x793A;">2.2.6 &#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x7684;&#x4F4D;&#x8868;&#x793A;</h2>
+<p>&#x539F;&#x7406;: &#x65E0;&#x7B26;&#x53F7;&#x6570;&#x7684;&#x96F6;
+<img src="../source/principle_2_2_6_1.png" alt="image"></p>
+<p>&#x8865;&#x7801;&#x6570;&#x7684;&#x6269;&#x5C55;, &#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x7B26;&#x53F7;&#x6269;&#x5C55;, &#x5728;&#x8868;&#x793A;&#x4E2D;&#x6DFB;&#x52A0;&#x6700;&#x9AD8;&#x6709;&#x6548;&#x4F4D;&#x7684;&#x503C;.</p>
+<p>&#x539F;&#x7406;: &#x8865;&#x7801;&#x6570;&#x7684;&#x7B26;&#x53F7;&#x6269;&#x5C55;
+<img src="../source/principle_2_2_6_2.png" alt="image"></p>
+<p>&#x63A8;&#x5BFC;: &#x8865;&#x7801;&#x6570;&#x503C;&#x7684;&#x7B26;&#x53F7;&#x6269;&#x5C55;
+<img src="../source/derivation_2_2_6_1.png" alt="image"></p>
+<p><img src="../source/derivation_expression_expansion_Two&apos;s-complement_number_by_sign_extension.png" alt="image"></p>
+<p>&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x6700;&#x9AD8;&#x6743;&#x503C;&#x4F4D;, &#x5C31;&#x4F1A;&#x5C06;&#x6B21;&#x9AD8;&#x6743;&#x503C;&#x4F4D;&#x7531;&#x8D1F;&#x6570;&#x53D8;&#x4E3A;&#x6B63;&#x6570;. &#x4E00;&#x52A0;&#x4E00;&#x51CF;&#x5C31;&#x548C;&#x539F;&#x6765;&#x7684;&#x503C;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x4E86;</p>
+<blockquote>
+<p>&#x4ECE;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5927;&#x5C0F;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5927;&#x5C0F;&#x7684;&#x8F6C;&#x6362;, &#x4EE5;&#x53CA;&#x65E0;&#x7B26;&#x53F7;&#x548C;&#x6709;&#x7B26;&#x53F7;&#x6570;&#x5B57;&#x4E4B;&#x95F4;&#x7684;&#x8F6C;&#x6362;&#x7684;&#x76F8;&#x5BF9;&#x987A;&#x5E8F;&#x80FD;&#x591F;&#x5F71;&#x54CD;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x7684;&#x884C;&#x4E3A;.
+```c
+short sx = -12345;
+unsigned uy = sx;</p>
+</blockquote>
+<p>printf(&quot;uy = %u:\t&quot;, uy);
+show_bytes((byte_pointer) &amp;uy, sizeof(unsigned));
+```</p>
+<p>&#x5728;&#x5927;&#x7AEF;&#x6CD5;&#x7684;&#x673A;&#x5668;&#x4E0A;, &#x8FD9;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x4EA7;&#x751F;&#x5982;&#x4E0B;&#x8F93;&#x51FA;:</p>
+<p>uy = 42494954951: ff ff cf c7</p>
+<p>&#x8FD9;&#x8868;&#x660E;&#x5F53;&#x628A; short &#x8F6C;&#x6362;&#x6210; unsigned &#x65F6;, &#x6211;&#x4EEC;&#x5148;&#x8981;&#x6539;&#x53D8;&#x5927;&#x5C0F;,&#x4E4B;&#x540E;&#x518D;&#x5B8C;&#x6210;&#x4ECE;&#x6709;&#x7B26;&#x53F7;&#x5230;&#x65E0;&#x7B26;&#x53F7;&#x7684;&#x8F6C;&#x6362;.
+&#x4E5F;&#x5C31;&#x662F;&#x8BF4; (unsigned)sx &#x7B49;&#x4EF7;&#x4E8E; (unsigned)(int)sx, &#x6C42;&#x503C;&#x5F97;&#x5230; 42494954951, &#x800C;&#x4E0D;&#x7B49;&#x4EF7;&#x4E8E; (unsigned) (unsigned short) sx, &#x540E;&#x8005;&#x6C42;&#x503C;&#x5F97;&#x5230; 53191. &#x8FD9;&#x4E2A;&#x89C4;&#x5219;&#x662F; C &#x8BED;&#x8A00;&#x6807;&#x51C6;&#x8981;&#x6C42;&#x7684;</p>
+<blockquote>
+<p>&#x81EA;&#x5DF1;&#x5BF9;&#x4E0A;&#x9762;&#x7684;&#x7406;&#x89E3;: &#x9996;&#x5148; sx = -12345; &#x5C06; short sx &#x8F6C;&#x6210; int sx &#x540E;, sx &#x7684;&#x503C;&#x8FD8;&#x662F; -12345, &#x8FD9;&#x5C31;&#x662F;&#x5148;&#x6539;&#x53D8;&#x5927;&#x5C0F;. &#x4E4B;&#x540E;&#x518D;&#x4ECE;&#x6709;&#x7B26;&#x53F7;&#x8F6C;&#x5230;&#x65E0;&#x7B26;&#x53F7;, 32&#x4F4D;&#x673A;&#x5668;&#x5C31;&#x662F; -12345+2<sup>32</sup> = 4294967296 - 12345 = 4294954951;</p>
+</blockquote>
 <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
 
                                 
@@ -322,7 +357,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第2章: 信息的表示和处理","level":"1.2.1","depth":2,"previous":{"title":"第一部分: 程序结构和执行","level":"1.2","depth":1,"path":"chapter1/README.md","ref":"chapter1/README.md","articles":[{"title":"第2章: 信息的表示和处理","level":"1.2.1","depth":2,"path":"chapter1/信息的表示和处理.md","ref":"chapter1/信息的表示和处理.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/信息的表示和处理.md","mtime":"2019-07-03T15:25:20.158Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-03T16:44:35.545Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第2章: 信息的表示和处理","level":"1.2.1","depth":2,"previous":{"title":"第一部分: 程序结构和执行","level":"1.2","depth":1,"path":"chapter1/README.md","ref":"chapter1/README.md","articles":[{"title":"第2章: 信息的表示和处理","level":"1.2.1","depth":2,"path":"chapter1/信息的表示和处理.md","ref":"chapter1/信息的表示和处理.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/信息的表示和处理.md","mtime":"2019-07-05T14:38:38.097Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-05T14:38:49.575Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
